@@ -1,0 +1,114 @@
+<html>
+<html lang="en">
+<head>
+    
+    <title>Coldour – Order Ice Cream</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+    <a href="index.html" class="logo">Coldour<span>.</span></a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="types.html">Types</a>
+        <a href="flavours.html">Flavours</a>
+        <a href="process.html">Process</a>
+        <a href="order.html">Order</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section alt-bg">
+    <h2 class="section-title">Place Your Order</h2>
+    <p class="section-subtitle">Choose type, flavour, size, quantity and wishlist option.</p>
+
+    <form class="order-form">
+        <div class="form-row">
+            <label for="order-name">Your Name</label>
+            <input type="text" id="order-name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-row">
+            <label for="order-type">Type</label>
+            <select id="order-type" required>
+                <option value="">Select type</option>
+                <option>Classic Scoop</option>
+                <option>Sundae</option>
+                <option>Milkshake</option>
+                <option>Family Tub</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="order-flavour">Flavour</label>
+            <select id="order-flavour" required>
+                <option value="">Select flavour</option>
+                <option>Vanilla Bean</option>
+                <option>Chocolate Fudge</option>
+                <option>Strawberry Swirl</option>
+                <option>Mango Magic</option>
+                <option>Mint Choco Chip</option>
+                <option>Cookies & Cream</option>
+                <option>Brownie Blast</option>
+                <option>Caramel Crunch</option>
+                <option>Berry Burst</option>
+                <option>Nutty Delight</option>
+                <option>Tropical Paradise</option>
+                <option>Oreo Overload</option>
+                <option>Classic Vanilla Shake</option>
+                <option>Double Chocolate Shake</option>
+                <option>Strawberry Cloud</option>
+                <option>Coffee Rush</option>
+                <option>Salted Caramel Shake</option>
+                <option>Banana Blast</option>
+                <option>Party Vanilla</option>
+                <option>Choco Feast</option>
+                <option>Strawberry Love</option>
+                <option>Mango Fiesta</option>
+                <option>Pista Royale</option>
+                <option>Tutti Frutti</option>
+            </select>
+        </div>
+
+        <div class="form-row form-row-inline">
+            <div>
+                <label for="order-size">Size</label>
+                <select id="order-size" required>
+                    <option value="">Select size</option>
+                    <option>Small (1 Scoop / 250 ml)</option>
+                    <option>Medium (2 Scoops / 500 ml)</option>
+                    <option>Large (3 Scoops / 750 ml)</option>
+                    <option>Family Tub (1 L)</option>
+                </select>
+            </div>
+            <div>
+                <label for="order-qty">Quantity</label>
+                <input type="number" id="order-qty" min="1" max="10" value="1" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="order-notes">Special Instructions</label>
+            <textarea id="order-notes" rows="3" placeholder="Extra toppings, less sugar, no nuts, etc."></textarea>
+        </div>
+
+        <div class="form-row checkbox-row">
+            <label>
+                <input type="checkbox">
+                Add this order to my Wishlist
+            </label>
+        </div>
+
+        <button type="submit" class="btn primary full-width">Submit Order</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Coldour Ice Creams. All rights reserved.</p>
+    <p>Project by <strong>Vedant Wade</strong>, Class 10, Ahmedabad.</p>
+</footer>
+</body>
+</html>
